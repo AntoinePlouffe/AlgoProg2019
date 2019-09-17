@@ -1,0 +1,64 @@
+ALGORITHM Roche-Papier-Ciseaux
+	CONSTANT
+		Roche = 1
+		Papier = 2
+		Ciseaux = 3
+	VARIABLE
+		INTERGER: Choixjoueur, ChoixOrdi, PointJoueur, PointOrdi
+BEGIN
+	Choixjoueur = 0;
+	ChoixOrdi = 0;
+	PointJoueur = 0;
+	PointOrdi = 0;
+	
+	WRITE "Veuillez choisir un chiffre de 1 à 3: "
+	READ Choixjoueur
+	
+	IF (Choixjoueur < 1 && Choixjoueur > 3)
+		WRITE "Veuillez choisir un chiffre de 1 à 3: "
+		READ Choixjoueur
+	ENDIF
+	
+	WHILE(PointJoueur != 3 && PointOrdi != 3)
+		IF(Choixjoueur == 1 && ChoixOrdi == 1)
+			WRITE "Égalité"
+			
+		ELSE IF (Choixjoueur == 1 && ChoixOrdi == 2)
+			WRITE "L'ordinateur à gagner"
+			PointOrdi++
+			
+		ELSE IF (Choixjoueur == 1 && ChoixOrdi == 3)
+			WRITE "Joueur à gagner"
+			PointJoueur++
+			
+		ELSE IF (Choixjoueur == 2 && ChoixOrdi == 1)
+				WRITE "Joueur à gagner"
+			PointJoueur++
+			
+		ELSE IF (Choixjoueur == 2 && ChoixOrdi == 2)
+			WRITE "Égalité"
+			
+		ELSE IF (Choixjoueur == 2 && ChoixOrdi == 3)
+			WRITE "L'ordinateur à gagner"
+			PointOrdi++
+			
+		ELSE IF (Choixjoueur == 3 && ChoixOrdi == 1)
+			WRITE "L'ordinateur à gagner"
+			PointOrdi++
+			
+		ELSE IF (Choixjoueur == 3 && ChoixOrdi == 2)
+				WRITE "Joueur à gagner"
+			PointJoueur++
+			
+		ELSE IF (Choixjoueur == 3 && ChoixOrdi == 3)
+			WRITE "Égalité"
+		ENDIF
+	ENDWHILE
+	
+	IF (PointJoueur == 3)
+		WRITE "Le joueur à gagner la parti!!"
+	ELSE IF (PointOrdi == 3)
+		WRITE "L'ordinateur à gagner la parti!!"
+	ENDIF
+		
+END
