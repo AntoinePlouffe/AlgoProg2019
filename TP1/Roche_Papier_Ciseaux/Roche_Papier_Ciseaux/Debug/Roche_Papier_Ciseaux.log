@@ -1,2 +1,3 @@
 ﻿  Roche_Papier_Ciseaux.cpp
+c:\users\1930022\desktop\algoprog2019\algoprog2019\tp1\roche_papier_ciseaux\roche_papier_ciseaux\roche_papier_ciseaux.cpp(30): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Roche_Papier_Ciseaux.vcxproj -> C:\Users\1930022\Desktop\AlgoProg2019\AlgoProg2019\TP1\Roche_Papier_Ciseaux\Debug\Roche_Papier_Ciseaux.exe

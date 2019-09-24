@@ -15,7 +15,7 @@ BEGIN
 	READ Choixjoueur
 	
 	IF (Choixjoueur < 1 && Choixjoueur > 3)
-		WRITE "Veuillez choisir un chiffre de 1 à 3: "
+		WRITE ": "
 		READ Choixjoueur
 	ENDIF
 	
