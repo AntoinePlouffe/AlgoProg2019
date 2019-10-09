@@ -1,3 +1,3 @@
 ﻿  main.cpp
-c:\users\1930022\documents\algo\algo_cours7\rpg\rpg_text_based\rpg_text_based\main.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  RPG_Text_Based.vcxproj -> C:\Users\1930022\Documents\Algo\Algo_Cours7\RPG\RPG_Text_Based\Debug\RPG_Text_Based.exe
+c:\users\1930022\desktop\algoprog2019\algoprog2019\rpg\rpg_text_based\rpg_text_based\main.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RPG_Text_Based.vcxproj -> C:\Users\1930022\Desktop\AlgoProg2019\AlgoProg2019\RPG\RPG_Text_Based\Debug\RPG_Text_Based.exe
