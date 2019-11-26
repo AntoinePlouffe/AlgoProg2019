@@ -1,27 +1,95 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
-int nbr1 = 5;
+
+class Game
+{
+public:
+
+	void Player1_Turn()
+	{
+
+
+	}
+
+	void Player2_Turn()
+	{
+
+	}
+
+	void Generate_Grid()
+	{
+
+
+		for (int y = 0; y < 6; y++)
+		{
+			for (int x = 0; x < 7; x++)
+			{
+
+				printf("|", grid[y][x] );
+
+				cout << " ";
+			}
+			printf("|");
+			cout << endl;
+
+		}
+	}
+
+	Game()
+	{
+		Generate_Grid();
+		Player1_Turn();
+
+		system("cls");
+
+		Generate_Grid();
+		Player2_Turn();
+
+		system("pause");
+		system("cls");
+
+		Game game;
+	}
+
+private:
+
+	char X = 'X';
+	char O = 'O';
+
+	int P1_Choise = 0;
+
+
+	char grid[6][7];
+//              /*0 / 1 / 2 / 3 / 4 / 5 / 6*/
+//* 0 */	{ {' ', ' ', ' ', ' ', ' ',' ',' '},
+//* 1 */	  {' ', ' ', ' ', ' ', ' ',' ',' '},
+//* 2 */	  {' ', ' ', ' ', ' ', ' ',' ',' '},
+//* 3 */	  {' ', ' ', ' ', ' ', ' ',' ',' '},
+//* 4 */	  {' ', ' ', ' ', ' ', ' ',' ',' '},
+//* 5 */	  {' ', ' ', ' ', ' ', ' ',' ',' '} }; 
+};
+
+
 
 int main()
 {
-	cout << "  0 1 2 3 4 5 6" << endl;
-	char grid[6][7];
-	for (int r = 0; r < 6; r++)
-	{
-		cout << nbr1 <<"|";
-		nbr1--;
+	//Main menu
 
-		for (int c = 0; c < 7; c++)
-		{
-			grid[r][c] = 0;
-			cout << grid[r][c] << "|";
-		}
-		cout << endl;
-	}
-
+	cout << "  _____                _____   _____   _____    _____                _____    _____              \n";
+	cout << " /     \\   |       |     |    /       /        |     |   |\\     |   /        |        |     |  \n";
+	cout << "|       |  |       |     |   |       |         |     |   | \\    |  |         |        |     |   \n";
+	cout << "|\\_____/   |       |	 |    \\_____  \\_____   |_____|   |  \\   |  |         |_____   |     |  \n";
+	cout << "|          |       |     |          \\       \\  |     |   |   \\  |  |         |        |_____| \n";
+	cout << "|          |       |     |           |       | |     |   |    \\ |  |         |              |   \n";
+	cout << "|           \\_____/    __|__   _____/  _____/  |     |   |     \\|   \\_____   |_____         | \n";
 	system("pause");
-	return 0;
-}
+	system("cls");
 
+	Game game;
+
+	return 0;
+
+}
