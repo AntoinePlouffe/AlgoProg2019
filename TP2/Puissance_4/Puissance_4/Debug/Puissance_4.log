@@ -1,5 +1,5 @@
 ﻿  main.cpp
 c:\users\1930022\desktop\algoprog2019\algoprog2019\tp2\puissance_4\puissance_4\main.cpp(31): warning C4474: 'printf' : too many arguments passed for format string
   c:\users\1930022\desktop\algoprog2019\algoprog2019\tp2\puissance_4\puissance_4\main.cpp(31): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-c:\users\1930022\desktop\algoprog2019\algoprog2019\tp2\puissance_4\puissance_4\main.cpp(57): warning C4717: 'Game::Game': recursive on all control paths, function will cause runtime stack overflow
+c:\users\1930022\desktop\algoprog2019\algoprog2019\tp2\puissance_4\puissance_4\main.cpp(55): warning C4717: 'Game::Game': recursive on all control paths, function will cause runtime stack overflow
   Puissance_4.vcxproj -> C:\Users\1930022\Desktop\AlgoProg2019\AlgoProg2019\TP2\Puissance_4\Debug\Puissance_4.exe
